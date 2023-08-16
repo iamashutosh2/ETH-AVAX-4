@@ -16,7 +16,7 @@ contract DegenToken is ERC20, ERC20Burnable, Ownable {
         _transfer(_msgSender(), recipient, amount);
         return true;
     }
-
+//working of redeem funcion
     function redeem(uint256 amount) external {
         require(amount > 0, "Please enter the amount greater than 0.");
         _burn(_msgSender(), amount);
